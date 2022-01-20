@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Quiz Game Page</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+
+<div class="container">
+	<center>
+		<h2 style="color: white;">Math Quiz</h2>
+		
+		<h5 id="player1_name"></h5> <span id="p1_score">  </span>
+		<br>
+		<h5 id="player2_name"></h5> <span id="p2_score">  </span>
+
+		<br>
+		<br>
+
+		<h3 id="player_question"></h3>
+		<h3 id="player_answer"></h3>
+
+		<h3 id="win"></h3>
+
+		<div id="output"></div>
+
+		<br>
+		<br>
+
+		<label>Type a Multiplication problem: <b style="color: rgb(255, 0, 0)">Try putting a expression which has 2 or a 3 digit number to challenge your opponents.</b></label>
+
+		<br>
+		<br>
+
+		<input id="num1_input" type="text" placeholder="Type any random 2-3 digit(or more) number here:">
+
+		<input id="num2_input" type="text" placeholder="Type any random 2-3 digit(or more) number here:">
+
+		<br>
+		<br>
+
+		<button id="send_btn" class="btn btn-success" onclick="send()"> Send </button>
+	</center>
+</div>
+
+<script src="game_page.js"></script>
+</body>
+</html>
